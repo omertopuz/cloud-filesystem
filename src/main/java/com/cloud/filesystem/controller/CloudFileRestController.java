@@ -38,7 +38,7 @@ public class CloudFileRestController {
         return response;
     }
 
-    @GetMapping("/fileupload")
+    @PostMapping("/fileupload")
     public FileInfo fileupload(@RequestBody GetFileData request){
         FileInfo response=  service.FileUpload(request);
         return response;
